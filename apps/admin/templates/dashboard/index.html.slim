@@ -1,0 +1,8 @@
+h2 Hello
+
+= form
+
+.links
+    - links.each do |link|
+        a.link(href="https://#{link.url}" target="_blank")
+            | #{link.key} #{link.url}
